@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#142b45">
+<title>MEDICAL DEPARTMENT HORN TOWN | หน่วยงานแพทย์</title>
+<style>
+:root{--navy:#142b45;--blue:#24577a;--sky:#5b9bc4;--ink:#263545;--muted:#718096;--bg:#f1f4f7;--line:#dfe6ed;--white:#fff;--shadow:0 12px 34px rgba(20,43,69,.08)}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--ink);font-family:system-ui,-apple-system,"Segoe UI",Tahoma,sans-serif;line-height:1.7}
+button,input,textarea,select{font:inherit}.topbar{background:var(--navy);color:white;position:sticky;top:0;z-index:20;box-shadow:0 4px 18px #0b1c2d22}
+.navwrap{max-width:1160px;margin:auto;padding:12px 22px;display:flex;align-items:center;gap:16px}.brand{display:flex;align-items:center;gap:11px;color:white;text-decoration:none;min-width:0}.logo{width:43px;height:43px;border:1px solid #ffffff55;border-radius:12px;display:grid;place-items:center;background:#ffffff12;flex:none}.logo svg{width:26px;height:26px}.brand strong{display:block;font-size:14px;letter-spacing:1.1px;line-height:1.3}.brand small{display:block;color:#c4d5e4;font-size:10px;letter-spacing:1.5px}
+nav{margin-left:auto;display:flex;gap:4px;align-items:center}nav button,.mobile-toggle{border:0;background:transparent;color:#dce8f1;padding:9px 11px;border-radius:8px;cursor:pointer;font-size:13px}nav button:hover,nav button.active{background:#ffffff18;color:white}.mobile-toggle{display:none;border:1px solid #ffffff44;font-size:20px}
+main{max-width:1160px;margin:auto;padding:26px 22px 56px}.page{display:none;animation:fade .22s ease}.page.active{display:block}@keyframes fade{from{opacity:.4;transform:translateY(5px)}to{opacity:1;transform:none}}
+.hero{background:linear-gradient(115deg,#142b45,#24577a 68%,#397ca3);color:white;border-radius:20px;padding:48px 42px;position:relative;overflow:hidden;box-shadow:var(--shadow);min-height:280px;display:flex;align-items:center}.hero:after{content:"✚";position:absolute;right:7%;top:-55px;font-size:300px;color:#ffffff0b;line-height:1}.hero-content{position:relative;z-index:1;max-width:640px}.eyebrow{font-size:11px;letter-spacing:2.5px;color:#c6dfef;font-weight:700}.hero h1{font-size:clamp(30px,5vw,48px);line-height:1.15;margin:12px 0}.hero p{color:#e0eaf2;max-width:580px;margin:0 0 22px}.btn{border:0;border-radius:9px;padding:11px 17px;background:var(--blue);color:white;font-weight:650;cursor:pointer;display:inline-flex;align-items:center;justify-content:center;gap:8px;text-decoration:none}.btn:hover{filter:brightness(1.1)}.btn.light{background:white;color:var(--navy)}.btn.outline{background:transparent;border:1px solid var(--line);color:var(--blue)}.btn.small{padding:7px 11px;font-size:13px}
+.section-head{display:flex;justify-content:space-between;align-items:end;gap:15px;margin:30px 0 15px}.section-head h2{margin:0;color:var(--navy);font-size:21px}.section-head p{margin:2px 0 0;color:var(--muted);font-size:13px}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}.card{background:white;border:1px solid var(--line);border-radius:15px;padding:20px;box-shadow:0 4px 16px #142b4508}.card h3{margin:8px 0 5px;color:var(--navy);font-size:17px}.card p{margin:0;color:var(--muted);font-size:14px}.iconbox{width:42px;height:42px;border-radius:12px;background:#eaf2f8;color:var(--blue);display:grid;place-items:center;font-size:21px}.notice{border-left:4px solid var(--sky);background:white;padding:16px 18px;border-radius:10px;margin-bottom:11px;box-shadow:0 3px 12px #142b4508}.notice small{color:var(--muted)}.notice h3{margin:3px 0;color:var(--navy);font-size:16px}.notice p{margin:0;color:#586779;font-size:14px}
+.page-title{background:white;border:1px solid var(--line);border-radius:16px;padding:25px 28px;margin-bottom:20px}.page-title .eyebrow{color:var(--sky)}.page-title h1{margin:4px 0;color:var(--navy);font-size:29px}.page-title p{margin:0;color:var(--muted)}
+.content-card{background:white;border:1px solid var(--line);border-radius:14px;padding:22px;margin-bottom:14px}.content-card h2{font-size:18px;color:var(--navy);margin:0 0 10px}.content-card h3{font-size:15px;color:var(--blue);margin:14px 0 4px}.content-card p,.content-card li{font-size:14px;color:#526173}.content-card ul{padding-left:22px;margin:6px 0}.tag{display:inline-block;background:#eaf2f8;color:#24577a;padding:3px 9px;border-radius:30px;font-size:11px;font-weight:700}
+.staff-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.staff{background:white;border:1px solid var(--line);border-radius:14px;padding:19px;text-align:center}.avatar{width:62px;height:62px;margin:0 auto 10px;border-radius:50%;background:#eaf2f8;color:var(--blue);display:grid;place-items:center;font-size:25px}.staff h3{margin:0;color:var(--navy);font-size:16px}.staff p{margin:3px 0;color:var(--muted);font-size:13px}
+form{display:grid;grid-template-columns:1fr 1fr;gap:14px}.field{display:flex;flex-direction:column;gap:5px}.field.full{grid-column:1/-1}.field label{font-size:13px;font-weight:700;color:var(--navy)}.field input,.field textarea,.field select{width:100%;border:1px solid #d6e0e8;border-radius:9px;padding:11px 12px;background:#fbfcfd;color:var(--ink);outline:none}.field input:focus,.field textarea:focus,.field select:focus{border-color:var(--sky);box-shadow:0 0 0 3px #5b9bc422}.field textarea{min-height:95px;resize:vertical}.form-actions{grid-column:1/-1;display:flex;gap:10px;flex-wrap:wrap}.help{font-size:12px;color:var(--muted);margin:0 0 16px}.output{display:none;margin-top:18px;background:#f4f8fb;border:1px dashed #9cb6ca;padding:15px;border-radius:10px}.output.show{display:block}.output textarea{width:100%;min-height:180px;border:1px solid var(--line);border-radius:8px;padding:10px;background:white}
+footer{background:var(--navy);color:#dce8f1;text-align:center;padding:25px 15px;font-size:12px}footer strong{letter-spacing:1px}footer p{margin:4px 0;color:#b9cbd9}
+.empty{padding:20px;border:1px dashed #cbd7e1;border-radius:12px;color:var(--muted);background:#ffffffaa;font-size:14px}
+@media(max-width:850px){nav{gap:0}nav button{padding:8px 7px;font-size:12px}.grid{grid-template-columns:repeat(2,1fr)}.staff-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:680px){.navwrap{padding:10px 15px}.mobile-toggle{display:block;margin-left:auto}nav{display:none;position:absolute;top:66px;left:0;right:0;background:var(--navy);padding:10px 14px 16px;box-shadow:0 12px 18px #0b1c2d22;flex-direction:column;align-items:stretch}nav.open{display:flex}nav button{text-align:left;padding:11px 13px;font-size:14px}.brand strong{font-size:12px}.brand small{font-size:9px}main{padding:17px 14px 40px}.hero{padding:34px 23px;min-height:300px}.hero:after{right:-40px;top:10px;font-size:220px}.grid,.staff-grid{grid-template-columns:1fr 1fr}.card{padding:16px}.page-title{padding:20px}.page-title h1{font-size:24px}form{grid-template-columns:1fr}.field.full,.form-actions{grid-column:auto}.section-head{align-items:start;flex-direction:column}}
+@media(max-width:390px){.grid,.staff-grid{grid-template-columns:1fr}.hero h1{font-size:30px}}
+</style>
+</head>
+<body>
+<header class="topbar">
+ <div class="navwrap">
+  <a class="brand" href="#" onclick="showPage('home');return false">
+   <span class="logo"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M9 2h6v7h7v6h-7v7H9v-7H2V9h7V2Z" fill="white"/></svg></span>
+   <span><strong>MEDICAL DEPARTMENT</strong><small>OFFICIAL COMMUNITY WEBSITE</small></span>
+  </a>
+  <button class="mobile-toggle" aria-label="เปิดเมนู" onclick="toggleMenu()">☰</button>
+  <nav id="mainNav">
+   <button class="active" data-page="home" onclick="showPage('home')">หน้าแรก</button>
+   <button data-page="rules" onclick="showPage('rules')">กฎระเบียบ</button>
+   <button data-page="guide" onclick="showPage('guide')">คู่มือการรักษา</button>
+   <button data-page="staff" onclick="showPage('staff')">บุคลากร</button>
+   <button data-page="apply" onclick="showPage('apply')">สมัครงาน</button>
+  </nav>
+ </div>
+</header>
+<main>
+<section class="page active" id="home">
+ <div class="hero"><div class="hero-content">
+  <div class="eyebrow">WELCOME TO OUR DEPARTMENT</div>
+  <h1>MEDICAL<br>DEPARTMENT</h1>
+  <p>ศูนย์รวมข่าวสาร กฎระเบียบ และคู่มือการปฏิบัติงานของหน่วยงานแพทย์ในชุมชน Roblox Roleplay</p>
+  <button class="btn light" onclick="showPage('rules')">อ่านกฎระเบียบ <span>→</span></button>
+ </div></div>
+ <div class="section-head"><div><h2>บริการข้อมูลหน่วยงาน</h2><p>เลือกหัวข้อที่ต้องการศึกษา</p></div></div>
+ <div class="grid">
+  <article class="card"><div class="iconbox">▤</div><h3>กฎระเบียบ</h3><p>แนวทางการปฏิบัติตนและข้อกำหนดของบุคลากร</p><button class="btn outline small" onclick="showPage('rules')">เปิดอ่าน →</button></article>
+  <article class="card"><div class="iconbox">✚</div><h3>คู่มือการรักษา</h3><p>ขั้นตอนการรับแจ้งเหตุและดูแลผู้ป่วยในเกม</p><button class="btn outline small" onclick="showPage('guide')">เปิดอ่าน →</button></article>
+  <article class="card"><div class="iconbox">♙</div><h3>บุคลากร</h3><p>ทำความรู้จักทีมงานและตำแหน่งภายในหน่วยงาน</p><button class="btn outline small" onclick="showPage('staff')">เปิดอ่าน →</button></article>
+ </div>
+ 
+</section>
+
+<section class="page" id="rules">
+  <div class="page-title">
+    <div class="eyebrow">MEDICAL DEPARTMENT</div>
+    <h1>กฎการปฏิบัติงานหน่วยงานแพทย์</h1>
+    <p>ระเบียบข้อบังคับและแนวทางปฏิบัติสำหรับบุคลากรทางการแพทย์ทุกระดับ</p>
+  </div>
+
+  <div class="content-card">
+    <span class="tag">หมวด 01 · วินัยและผลประโยชน์</span>
+    <h2>ข้อกำหนดด้านความประพฤติ</h2>
+    <ol>
+      <li>หน่วยงานแพทย์ห้ามยุ่งเกี่ยวกับแก๊งหรือประชาชนในเรื่องผลประโยชน์โดยเด็ดขาด หากตรวจพบจะพิจารณาปลดออกจากหน่วยงานทันที</li>
+      <li>แพทย์ไม่สามารถทำงานดำได้ทุกชนิด และห้ามมีส่วนร่วมในการช่วยเหลืองานดำทุกรูปแบบ เช่น ขับรถหลบหนีตำรวจ หรือนั่งรถไปกับผู้ที่กำลังทำงานดำ</li>
+      <li>แพทย์ต้องใช้คำพูดสุภาพและควบคุมอารมณ์ของตนเองอยู่เสมอ หากมีการร้องเรียนและตรวจสอบพบว่ากระทำผิด อาจถูกพักงาน 3 วัน หรือปลดออกจากหน่วยงานหากเป็นกรณีร้ายแรง</li>
+      <li>แพทย์ห้ามเปิดเผยข้อมูลที่เกี่ยวข้องกับหน่วยงานให้บุคคลภายนอกทราบ หากตรวจพบจะถูกพักงาน 3 วัน</li>
+    </ol>
+  </div>
+
+  <div class="content-card">
+    <span class="tag">หมวด 02 · ระเบียบการเข้าเวร</span>
+    <h2>เวลาเข้าเวรและการลา</h2>
+    <ol>
+      <li>แพทย์ต้องเข้าเวรตามเวลาที่หน่วยงานกำหนด และต้องปฏิบัติหน้าที่อย่างน้อย 2 ชั่วโมงต่อวัน</li>
+      <li>แพทย์สามารถลาได้ไม่เกิน 3 วันต่อ 1 สัปดาห์</li>
+      <li>หากไม่สามารถเข้าเวรได้เนื่องจากติดธุระหรือมีเหตุจำเป็น ต้องแจ้งลาใน Discord ของหน่วยงาน หากไม่แจ้งลาจะถือว่าขาดเวรทันที</li>
+      <li>หากขาดเวรติดต่อกัน 3 วันโดยไม่มีการแจ้งลา จะถูกปลดออกจากหน่วยงานแพทย์ทันที</li>
+      <li>หากต้องการลาออกจากหน่วยงาน จะต้องแจ้งผู้อำนวยการแพทย์ทุกครั้ง</li>
+      <li>แพทย์ห้ามเหม่อหรือ AFK เกิน 10 นาที หากมีเหตุจำเป็นต้องเหม่อ ต้องประกาศแจ้งประชาชนให้ทราบอย่างชัดเจน</li>
+    </ol>
+  </div>
+
+  <div class="content-card">
+    <span class="tag">หมวด 03 · การปฏิบัติหน้าที่</span>
+    <h2>การรักษาและการช่วยเหลือประชาชน</h2>
+    <ol>
+      <li>เมื่อเข้าเวรและมีประชาชนกดเคสเรียกแพทย์ จะต้องนำรถของหน่วยงานไปใช้ในการปฏิบัติหน้าที่ทุกครั้ง หากพบแพทย์นำรถส่วนตัวมาใช้แทน จะถูกตักเตือนและพักงาน 3 วัน</li>
+      <li>แพทย์ที่กำลังเข้าเวรห้ามอุ้มประชาชนหรือบุคคลอื่นในขณะปฏิบัติหน้าที่ หากฝ่าฝืนจะถูกพักงาน 3 วัน</li>
+      <li>หากมีประชาชนกดเคสเรียกแพทย์ในบริเวณพื้นที่งานดำ แพทย์สามารถเข้าให้ความช่วยเหลือได้ทันที</li>
+      <li>หากพบเห็นผู้เสียชีวิตอยู่ตรงหน้าในขณะเข้าเวร ต้องรีบเข้าให้ความช่วยเหลือโดยเร็วที่สุด</li>
+      <li>ขณะเข้าเวร แพทย์ห้ามเข้าเรเบลแดงตามลำพังโดยไม่มีเหตุจำเป็น ยกเว้นกรณีมีผู้กดเคสเรียกให้เข้าไปชุบ สามารถเข้าไปช่วยเหลือได้และต้องรีบออกจากพื้นที่ทันที</li>
+    </ol>
+  </div>
+
+  <div class="content-card">
+    <span class="tag">หมวด 04 · รถและเครื่องแบบหน่วยงาน</span>
+    <h2>การใช้ทรัพย์สินและเครื่องแบบ</h2>
+    <ol>
+      <li>ห้ามนำรถของหน่วยงานไปใช้นอกเหนือเวลาปฏิบัติงานโดยเด็ดขาด</li>
+      <li>ห้ามอนุญาตให้ประชาชนหรือสมาชิกแก๊งขับรถของหน่วยงานโดยเด็ดขาด หากตรวจพบจะถูกพักงาน 3 วันทันที</li>
+      <li>ห้ามสวมชุดหน่วยงานหรือใช้เครื่องแบบแพทย์เพื่อเข้าร่วมกิจกรรมภายในเมือง ยกเว้นกิจกรรม AIRDROP หากฝ่าฝืนจะถูกตักเตือนและพักงาน 3 วัน</li>
+    </ol>
+  </div>
+
+  <div class="content-card">
+    <span class="tag">หมวด 05 · บทลงโทษ</span>
+    <h2>มาตรการทางวินัย</h2>
+    <ul>
+      <li>ความผิดที่ระบุโทษพักงาน 3 วัน ให้ดำเนินการตามข้อกำหนดของแต่ละข้อ</li>
+      <li>ความผิดเกี่ยวกับผลประโยชน์ระหว่างหน่วยงานกับแก๊งหรือประชาชน อาจถูกปลดออกจากหน่วยงานทันที</li>
+      <li>การขาดเวรติดต่อกัน 3 วันโดยไม่แจ้งลา ให้ปลดออกจากหน่วยงานทันที</li>
+      <li>กรณีความผิดร้ายแรง ผู้บังคับบัญชาสามารถพิจารณาปลดออกจากหน่วยงานได้</li>
+      <li>ความผิดอื่นที่ไม่ได้กำหนดบทลงโทษเฉพาะ ให้ใช้ระบบพิจารณาความผิด 3 ครั้งตามระเบียบของหน่วยงาน</li>
+    </ul>
+  </div>
+
+  <p class="help">
+    ประกาศ: บุคลากรทุกคนต้องอ่านและปฏิบัติตามกฎระเบียบของหน่วยงานอย่างเคร่งครัด
+    หากฝ่าฝืนจะได้รับการพิจารณาโทษตามข้อกำหนดของหน่วยงาน
+    กฎทั้งหมดนี้ใช้สำหรับ Roblox Roleplay เท่านั้น
+  </p>
+</section><div class="content-card"><span class="tag">ขั้นตอน 01</span><h2>รับแจ้งเหตุ</h2><ol><li>รับข้อมูลสถานที่และลักษณะเหตุการณ์จากผู้แจ้ง</li><li>ยืนยันจุดเกิดเหตุและประสานทีมที่เกี่ยวข้อง</li><li>เตรียมอุปกรณ์และยานพาหนะตามบทบาทในเกม</li></ol></div>
+ <div class="content-card"><span class="tag">ขั้นตอน 02</span><h2>เข้าถึงผู้ป่วย</h2><ol><li>แนะนำตัวในบทบาทเจ้าหน้าที่แพทย์</li><li>สอบถามอาการและตรวจสอบสถานการณ์ตามระบบ Roleplay ของเซิร์ฟเวอร์</li><li>คำนึงถึงความปลอดภัยของพื้นที่ก่อนเริ่มบทบาทการช่วยเหลือ</li></ol></div>
+ <div class="content-card"><span class="tag">ขั้นตอน 03</span><h2>ดำเนินการช่วยเหลือในเกม</h2><ol><li>ใช้คำสั่งหรือ Animation ทางการแพทย์ที่เซิร์ฟเวอร์กำหนด</li><li>สื่อสารกับผู้ป่วยและผู้ร่วมเหตุการณ์อย่างเหมาะสม</li><li>ประสานการนำส่งโรงพยาบาลตามกติกาของเมือง</li></ol></div>
+ <div class="content-card"><span class="tag">ขั้นตอน 04</span><h2>สรุปและบันทึกเหตุการณ์</h2><ol><li>แจ้งผลการปฏิบัติงานแก่ผู้รับผิดชอบ</li><li>บันทึกข้อมูลเหตุการณ์ตามแบบฟอร์มของหน่วยงาน</li><li>เก็บอุปกรณ์และเตรียมพร้อมสำหรับภารกิจถัดไป</li></ol></div>
+ <div class="content-card"><h2>ข้อควรทราบ</h2><p>คู่มือนี้เป็นแนวทางการแสดงบทบาทสมมติใน Roblox เท่านั้น ไม่ใช่คำแนะนำทางการแพทย์สำหรับเหตุฉุกเฉินในชีวิตจริง หากเกิดเหตุฉุกเฉินจริงให้ติดต่อบริการฉุกเฉินในพื้นที่</p></div>
+</section>
+
+<section class="page" id="staff">
+  <div class="page-title">
+    <div class="eyebrow">OUR TEAM</div>
+    <h1>รายชื่อบุคลากร</h1>
+    <p>ทำความรู้จักกับทีมแพทย์ของเรา</p>
+  </div>
+
+  <div class="content-card" style="margin-top:18px">
+    <h2>Director</h2>
+    <p>ตำแหน่งผู้อำนวยการแพทย์</p>
+    <div class="staff-grid">
+      <article class="staff">
+        <span class="tag">DIRECTOR</span>
+        <h3>Vacant Position</h3>
+        <p>ยังไม่มีผู้ดำรงตำแหน่งผู้อำนวยการแพทย์</p>
+      </article>
+    </div>
+  </div>
+
+  <div class="content-card" style="margin-top:18px">
+    <h2>Medical Staff</h2>
+    <p>รายชื่อบุคลากรหน่วยงานแพทย์</p>
+    <div class="staff-grid">
+      <article class="staff">
+        <span class="tag">MEDICAL STAFF</span>
+        <h3>Nubdao Missyou</h3>
+        <p>ตำแหน่ง: Medical Staff</p>
+      </article>
+
+      <article class="staff">
+        <span class="tag">MEDICAL STAFF</span>
+        <h3>Sora Hunter</h3>
+        <p>ตำแหน่ง: Medical Staff</p>
+      </article>
+
+      <article class="staff">
+        <span class="tag">MEDICAL STAFF</span>
+        <h3>Ginger Bellamy</h3>
+        <p>ตำแหน่ง: Medical Staff</p>
+      </article>
+    </div>
+  </div>
+</section><section class="page" id="apply">
+  <div class="page-title">
+    <div class="eyebrow">JOIN OUR TEAM</div>
+    <h1>สมัครเข้าหน่วยงาน</h1>
+    <p>กรอกข้อมูลเบื้องต้นเพื่อจัดทำใบสมัครสำหรับส่งให้ผู้ดูแลหน่วยงาน</p>
+  </div>
+ <div class="content-card">
+  <p class="help">กรอกข้อมูลให้ครบถ้วน จากนั้นกด “สร้างใบสมัคร” และคัดลอกข้อความไปส่งใน Discord ของหน่วยงาน</p>
+  <form id="applicationForm">
+   <div class="field"><label for="roblox">ชื่อผู้เล่น Roblox *</label><input id="roblox" required placeholder="กรอกชื่อผู้เล่น"></div>
+   <div class="field"><label for="discord">ชื่อ Discord *</label><input id="discord" required placeholder="ชื่อ Discord หรือ @username"></div>
+   <div class="field"><label for="age">อายุ *</label><input id="age" required type="number" min="1" max="99" placeholder="ระบุอายุ"></div>
+   <div class="field"><label for="position">ตำแหน่งที่ต้องการสมัคร *</label><select id="position" required><option value="">เลือกตำแหน่ง</option><option>เจ้าหน้าที่แพทย์</option><option>หน่วยกู้ชีพ</option><option>อื่น ๆ / ตามที่หน่วยงานกำหนด</option></select></div>
+   <div class="field full"><label for="experience">ประสบการณ์ Roleplay / งานแพทย์</label><textarea id="experience" placeholder="เล่าประสบการณ์ (ถ้ามี)"></textarea></div>
+   <div class="field full"><label for="reason">เหตุผลที่ต้องการเข้าร่วม *</label><textarea id="reason" required placeholder="เขียนเหตุผลในการสมัคร"></textarea></div>
+   <div class="form-actions"><button class="btn" type="submit">สร้างใบสมัคร</button><button class="btn outline" type="reset" onclick="document.getElementById('applicationOutput').classList.remove('show')">ล้างข้อมูล</button></div>
+  </form>
+  <div class="output" id="applicationOutput"><b>ใบสมัครของคุณ</b><p class="help">คัดลอกข้อความด้านล่าง แล้วนำไปส่งใน Discord ของหน่วยงาน</p><textarea id="applicationText" readonly></textarea><button class="btn small" style="margin-top:10px" onclick="copyApplication()">คัดลอกใบสมัคร</button><span id="copyStatus" class="help" aria-live="polite"></span></div>
+ </div>
+ <div class="content-card"><h2>หมายเหตุ</h2><p>แบบฟอร์มนี้สร้างข้อความใบสมัครบนอุปกรณ์ของผู้กรอกเท่านั้น ยังไม่มีระบบส่งข้อมูลเข้า Discord หรือฐานข้อมูลอัตโนมัติ ต้องนำข้อความไปส่งให้ผู้ดูแลด้วยตนเอง</p></div>
+</section>
+</main>
+<footer><strong>✚ MEDICAL DEPARTMENT</strong><p>ROBLOX ROLEPLAY • COMMUNITY WEBSITE</p><p>เว็บไซต์ชุมชนที่ไม่เป็นทางการและไม่มีความเกี่ยวข้องกับ Roblox Corporation</p></footer>
+<script>
+function showPage(id){
+ document.querySelectorAll('.page').forEach(p=>p.classList.toggle('active',p.id===id));
+ document.querySelectorAll('nav button').forEach(b=>b.classList.toggle('active',b.dataset.page===id));
+ document.getElementById('mainNav').classList.remove('open');
+ window.scrollTo({top:0,behavior:'smooth'});
+}
+function toggleMenu(){document.getElementById('mainNav').classList.toggle('open')}
+document.getElementById('applicationForm').addEventListener('submit',function(e){
+ e.preventDefault();
+ const get=id=>document.getElementById(id).value.trim();
+ const text=`แบบฟอร์มสมัครเข้าหน่วยงาน MEDICAL DEPARTMENT\n━━━━━━━━━━━━━━━━━━━━\nชื่อผู้เล่น Roblox: ${get('roblox')}\nชื่อ Discord: ${get('discord')}\nอายุ: ${get('age')}\nตำแหน่งที่ต้องการสมัคร: ${get('position')}\nประสบการณ์: ${get('experience')||'-'}\nเหตุผลที่สมัคร: ${get('reason')}\n━━━━━━━━━━━━━━━━━━━━\nข้าพเจ้าขอยืนยันว่าข้อมูลข้างต้นเป็นความจริง`;
+ document.getElementById('applicationText').value=text;
+ document.getElementById('applicationOutput').classList.add('show');
+ document.getElementById('copyStatus').textContent='';
+});
+async function copyApplication(){
+ const area=document.getElementById('applicationText');
+ try{await navigator.clipboard.writeText(area.value);document.getElementById('copyStatus').textContent='คัดลอกเรียบร้อยแล้ว';}
+ catch(e){area.select();document.execCommand('copy');document.getElementById('copyStatus').textContent='เลือกและคัดลอกข้อความได้แล้ว';}
+}
+</script>
+</body>
+</html>
