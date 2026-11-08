@@ -32,15 +32,15 @@ footer{background:var(--navy);color:#dce8f1;text-align:center;padding:25px 15px;
    <span class="logo"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M9 2h6v7h7v6h-7v7H9v-7H2V9h7V2Z" fill="white"/></svg></span>
    <span><strong>MEDICAL DEPARTMENT</strong><small>OFFICIAL COMMUNITY WEBSITE</small></span>
   </a>
-  <button class="mobile-toggle" aria-label="เปิดเมนู" onclick="toggleMenu()">☰</button>
-  <nav id="mainNav">
-   <button class="active" data-page="home" onclick="showPage('home')">หน้าแรก</button>
-   <button data-page="rules" onclick="showPage('rules')">กฎระเบียบ</button>
-   <button data-page="guide" onclick="showPage('guide')">คู่มือการรักษา</button>
-   <button data-page="staff" onclick="showPage('staff')">บุคลากร</button>
-   <button data-page="apply" onclick="showPage('apply')">สมัครงาน</button>
-  </nav>
- </div>
+<button class="mobile-toggle" aria-label="เปิดเมนู" onclick="toggleMenu()">☰</button>
+<nav id="mainNav">
+  <button class="active" data-page="home" onclick="showPage('home')">หน้าแรก</button>
+  <button data-page="rules" onclick="showPage('rules')">กฎระเบียบ</button>
+  <button data-page="hospital-rules" onclick="showPage('hospital-rules')">กฎระเบียบโรงพยาบาล</button>
+  <button data-page="guide" onclick="showPage('guide')">คู่มือการรักษา</button>
+  <button data-page="staff" onclick="showPage('staff')">บุคลากร</button>
+  <button data-page="apply" onclick="showPage('apply')">สมัครงาน</button>
+</nav>
 </header>
 <main>
 <section class="page active" id="home">
@@ -135,15 +135,41 @@ footer{background:var(--navy);color:#dce8f1;text-align:center;padding:25px 15px;
  <div class="content-card"><span class="tag">ขั้นตอน 04</span><h2>สรุปและบันทึกเหตุการณ์</h2><ol><li>แจ้งผลการปฏิบัติงานแก่ผู้รับผิดชอบ</li><li>บันทึกข้อมูลเหตุการณ์ตามแบบฟอร์มของหน่วยงาน</li><li>เก็บอุปกรณ์และเตรียมพร้อมสำหรับภารกิจถัดไป</li></ol></div>
  <div class="content-card"><h2>ข้อควรทราบ</h2><p>คู่มือนี้เป็นแนวทางการแสดงบทบาทสมมติใน Roblox เท่านั้น ไม่ใช่คำแนะนำทางการแพทย์สำหรับเหตุฉุกเฉินในชีวิตจริง หากเกิดเหตุฉุกเฉินจริงให้ติดต่อบริการฉุกเฉินในพื้นที่</p></div>
 </section>
+</section>
 
-<section class="page" id="staff">
+<section class="page" id="hospital-rules">
   <div class="page-title">
-    <div class="eyebrow">OUR TEAM</div>
-    <h1>รายชื่อบุคลากร</h1>
-    <p>ทำความรู้จักกับทีมแพทย์ของเรา</p>
+    <div class="eyebrow">MEDICAL DEPARTMENT</div>
+    <h1>กฎระเบียบสำหรับประชาชน</h1>
+    <p>ข้อกำหนดและข้อปฏิบัติสำหรับประชาชนภายในบริเวณโรงพยาบาล</p>
   </div>
 
-  <div class="content-card" style="margin-top:18px">
+  <div class="content-card">
+    <span class="tag">HOSPITAL RULES</span>
+    <h2>กฎระเบียบภายในโรงพยาบาล</h2>
+    <ol>
+      <li>ประชาชนต้องใช้ถ้อยคำสุภาพและให้เกียรติบุคลากรทางการแพทย์ทุกคน</li>
+      <li>ห้ามทะเลาะวิวาท ทำร้ายร่างกาย ก่อความวุ่นวาย หรือรบกวนการปฏิบัติงานภายในโรงพยาบาล</li>
+      <li>ห้ามดึงสตอรี่ส่วนตัว ความขัดแย้ง หรือสตอรี่ที่ไม่เกี่ยวข้องกับการรักษาเข้ามาเล่นภายในเขตโรงพยาบาล</li>
+      <li>ห้ามพกพา แสดง หรือใช้อาวุธเพื่อข่มขู่ ทำร้าย หรือก่อเหตุภายในบริเวณโรงพยาบาล</li>
+      <li>ห้ามขับรถเร็ว ก่อกวน หรือจอดรถกีดขวางทางเข้าออกและจุดรับส่งผู้ป่วย</li>
+      <li>ห้ามขัดขวาง รบกวน หรือแทรกแซงการช่วยเหลือผู้ป่วยของบุคลากร</li>
+      <li>ห้ามบุกรุกหรือเข้าใช้พื้นที่เฉพาะของโรงพยาบาลโดยไม่ได้รับอนุญาต</li>
+      <li>ประชาชนต้องให้ความร่วมมือและปฏิบัติตามคำแนะนำของบุคลากรภายในโรงพยาบาล</li>
+      <li>ห้ามกระทำการใด ๆ ที่ส่งผลกระทบต่อผู้ป่วย บุคลากร หรือการให้บริการของโรงพยาบาล</li>
+      <li>หากฝ่าฝืนกฎระเบียบ โรงพยาบาลมีสิทธิ์แจ้งเตือนและประสานเจ้าหน้าที่ตามกฎของเมืองเพื่อดำเนินการ</li>
+    </ol>
+  </div>
+
+  <p class="help">
+    โรงพยาบาลเป็นพื้นที่สำหรับการรักษาและช่วยเหลือชีวิต
+    ขอความร่วมมือประชาชนทุกคนเคารพกฎระเบียบและรักษาความสงบภายในพื้นที่
+    กฎทั้งหมดนี้ใช้สำหรับ Roblox Roleplay เท่านั้น
+  </p>
+</section>
+
+	<section class="page" id="apply">
+<div class="content-card" style="margin-top:18px">
     <h2>Director</h2>
     <p>ตำแหน่งผู้อำนวยการแพทย์</p>
     <div class="staff-grid">
