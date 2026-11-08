@@ -74,7 +74,7 @@ footer{background:var(--navy);color:#dce8f1;text-align:center;padding:25px 15px;
       <li>หน่วยงานแพทย์ห้ามยุ่งเกี่ยวกับแก๊งหรือประชาชนในเรื่องผลประโยชน์โดยเด็ดขาด หากตรวจพบจะพิจารณาปลดออกจากหน่วยงานทันที</li>
       <li>แพทย์ไม่สามารถทำงานดำได้ทุกชนิด และห้ามมีส่วนร่วมในการช่วยเหลืองานดำทุกรูปแบบ เช่น ขับรถหลบหนีตำรวจ หรือนั่งรถไปกับผู้ที่กำลังทำงานดำ</li>
       <li>แพทย์ต้องใช้คำพูดสุภาพและควบคุมอารมณ์ของตนเองอยู่เสมอ หากมีการร้องเรียนและตรวจสอบพบว่ากระทำผิด อาจถูกพักงาน 3 วัน หรือปลดออกจากหน่วยงานหากเป็นกรณีร้ายแรง</li>
-      <li>แพทย์ห้ามเปิดเผยข้อมูลที่เกี่ยวข้องกับหน่วยงานให้บุคคลภายนอกทราบ หากตรวจพบจะถูกพักงาน 3 วัน</li>
+      <li>แพทย์ห้ามเปิดเผยข้อมูลที่เกี่ยวข้องกับหน่วยงานให้บุคคลภายนอกทราบ หากตรวจพบจะถูกสั่งปลดทันที</li>
     </ol>
   </div>
 
@@ -228,8 +228,8 @@ footer{background:var(--navy);color:#dce8f1;text-align:center;padding:25px 15px;
     <div class="staff-grid">
       <article class="staff">
         <span class="tag">DIRECTOR</span>
-        <h3>Vacant Position</h3>
-        <p>ยังไม่มีผู้ดำรงตำแหน่งผู้อำนวยการแพทย์</p>
+        <h3>Nubdao Missyou</h3>
+        <p>ตำแหน่ง: ผู้อำนวยการแพทย์</p>
       </article>
     </div>
   </div>
@@ -238,12 +238,6 @@ footer{background:var(--navy);color:#dce8f1;text-align:center;padding:25px 15px;
     <h2>Medical Staff</h2>
     <p>รายชื่อบุคลากรหน่วยงานแพทย์</p>
     <div class="staff-grid">
-      <article class="staff">
-        <span class="tag">MEDICAL STAFF</span>
-        <h3>Nubdao Missyou</h3>
-        <p>ตำแหน่ง: Medical Staff</p>
-      </article>
-
       <article class="staff">
         <span class="tag">MEDICAL STAFF</span>
         <h3>Sora Hunter</h3>
@@ -257,30 +251,9 @@ footer{background:var(--navy);color:#dce8f1;text-align:center;padding:25px 15px;
       </article>
     </div>
   </div>
-</section>
-<section class="page" id="apply">
-  <div class="page-title">
-    <div class="eyebrow">JOIN OUR TEAM</div>
-    <h1>สมัครเข้าหน่วยงาน</h1>
-    <p>กรอกข้อมูลเบื้องต้นเพื่อจัดทำใบสมัครสำหรับส่งให้ผู้ดูแลหน่วยงาน</p>
-  </div>
- <div class="content-card">
-  <p class="help">กรอกข้อมูลให้ครบถ้วน จากนั้นกด “สร้างใบสมัคร” และคัดลอกข้อความไปส่งใน Discord ของหน่วยงาน</p>
-  <form id="applicationForm">
-   <div class="field"><label for="roblox">ชื่อผู้เล่น Roblox *</label><input id="roblox" required placeholder="กรอกชื่อผู้เล่น"></div>
-   <div class="field"><label for="discord">ชื่อ Discord *</label><input id="discord" required placeholder="ชื่อ Discord หรือ @username"></div>
-   <div class="field"><label for="age">อายุ *</label><input id="age" required type="number" min="1" max="99" placeholder="ระบุอายุ"></div>
-   <div class="field"><label for="position">ตำแหน่งที่ต้องการสมัคร *</label><select id="position" required><option value="">เลือกตำแหน่ง</option><option>เจ้าหน้าที่แพทย์</option><option>หน่วยกู้ชีพ</option><option>อื่น ๆ / ตามที่หน่วยงานกำหนด</option></select></div>
-   <div class="field full"><label for="experience">ประสบการณ์ Roleplay / งานแพทย์</label><textarea id="experience" placeholder="เล่าประสบการณ์ (ถ้ามี)"></textarea></div>
-   <div class="field full"><label for="reason">เหตุผลที่ต้องการเข้าร่วม *</label><textarea id="reason" required placeholder="เขียนเหตุผลในการสมัคร"></textarea></div>
-   <div class="form-actions"><button class="btn" type="submit">สร้างใบสมัคร</button><button class="btn outline" type="reset" onclick="document.getElementById('applicationOutput').classList.remove('show')">ล้างข้อมูล</button></div>
-  </form>
-  <div class="output" id="applicationOutput"><b>ใบสมัครของคุณ</b><p class="help">คัดลอกข้อความด้านล่าง แล้วนำไปส่งใน Discord ของหน่วยงาน</p><textarea id="applicationText" readonly></textarea><button class="btn small" style="margin-top:10px" onclick="copyApplication()">คัดลอกใบสมัคร</button><span id="copyStatus" class="help" aria-live="polite"></span></div>
- </div>
- <div class="content-card"><h2>หมายเหตุ</h2><p>แบบฟอร์มนี้สร้างข้อความใบสมัครบนอุปกรณ์ของผู้กรอกเท่านั้น ยังไม่มีระบบส่งข้อมูลเข้า Discord หรือฐานข้อมูลอัตโนมัติ ต้องนำข้อความไปส่งให้ผู้ดูแลด้วยตนเอง</p></div>
-</section>
-</main>
-<footer><strong>✚ MEDICAL DEPARTMENT</strong><p>ROBLOX ROLEPLAY • COMMUNITY WEBSITE</p><p>เว็บไซต์ชุมชนที่ไม่เป็นทางการและไม่มีความเกี่ยวข้องกับ Roblox Corporation</p></footer>
+  </section>
+  </main>
+</section> MEDICAL DEPARTMENT</strong><p>ROBLOX ROLEPLAY • COMMUNITY WEBSITE</p><p>เว็บไซต์ชุมชนที่ไม่เป็นทางการและไม่มีความเกี่ยวข้องกับ Roblox Corporation</p></footer>
 <script>
 function showPage(id){
  document.querySelectorAll('.page').forEach(p=>p.classList.toggle('active',p.id===id));
